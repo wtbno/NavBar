@@ -8,31 +8,45 @@ body {
   padding: 0;
 }
 
-.Navbar{
-background-color: #0080ff;
-width: 100%;
-height: 80px;
-font-family: Arial, Helvetica, sans-serif;
-display: flex;
+.Navbar {
+  background-color: #80ff80;
+  width: 100%;
+  height: 80px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
 }
 
-.Navbar .leftside{
+.Navbar .leftside {
   flex: 50%;
-
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
-.Navbar .rightside{
+.Navbar .rightside {
   flex: 50%;
-  
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px;
 }
 
-.Navbar .leftside .links{
+.rightside input{
+  width: 220px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  padding-left: 15px;
+  color: black;
+}
+
+.Navbar .leftside .links {
   max-height: 80px;
-
 }
 
-.Navbar .leftside .links a{
- text-decoration: none;
- color: #fff;
-font-size: 25px;
-margin-left: 15px;
+.Navbar .leftside .links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+  margin-left: 15px;
 }

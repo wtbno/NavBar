@@ -1,3 +1,4 @@
+import { Button } from "@mui/material";
 import React from "react";
 import "../App.css";
 
@@ -12,7 +13,22 @@ function Navbar() {
           <a href="/contactus">Contact Us</a>
         </div>
       </div>
-      <div className="rightside"></div>
+      <div className="rightside">
+        <input type="text" placeholder="Pesquisar..." />
+        <Button
+          sx={{
+            color: "#fff",
+            backgroundColor: "#0080ff",
+            border: "1px solid 00ff00",
+            height:'32px',
+            width:'70px',
+            fontSize:'11px',
+            
+          }}
+        >
+          Pesquisar
+        </Button>
+      </div>
     </div>
   );
 }
